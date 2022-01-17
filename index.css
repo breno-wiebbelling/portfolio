@@ -10,7 +10,7 @@ body{
 
     display: flex;
     flex-direction: column;
-    background-image: url('./files/home/stars.png');
+    background-image: url('files/home/stars.png');
 
 }
 
@@ -21,7 +21,7 @@ a{
 
 .nome-topo{
     
-    background-image: url('../files/home/topo-nome.png');
+    background-image: url('files/home/topo-nome.png');
 
     display: flex;
     
