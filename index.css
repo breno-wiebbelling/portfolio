@@ -1,6 +1,6 @@
 @font-face{
     font-family: roboto;
-    src: url('../files/font/robotoMe.ttf');
+    src: url('files/font/robotoMe.ttf');
 }
 
 body{
@@ -10,7 +10,7 @@ body{
 
     display: flex;
     flex-direction: column;
-    background-image: url('../files/home/stars.png');
+    background-image: url('./files/home/stars.png');
 
 }
 
