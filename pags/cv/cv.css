@@ -1,0 +1,70 @@
+@font-face{
+    font-family: roboto;
+    src: url('files/font/robotoMe.ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+
+    display: flex;
+    flex-direction: column;
+    background-image: url('files/home/stars.png');
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.nome-topo{
+    
+    background-image: url('files/home/topo-nome.png');
+
+    display: flex;
+    
+    align-items: center;
+
+    justify-content: center;
+
+    height: 50px;
+
+}
+
+.p-nome{
+    color: darkgray;
+
+    font-family: roboto;
+    font-size: 20px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+
+}
+
+.navbar{
+    background-color: rgb(95, 67, 67);
+    opacity: 0.7;
+
+    height: 40px;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.link-nav{
+    color: wheat;
+    margin: 2px 20px 2px 20px;
+
+    font-family: roboto;
+}
+
+.link-nav:hover{
+    color: sienna;
+}
