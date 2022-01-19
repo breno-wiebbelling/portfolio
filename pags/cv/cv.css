@@ -1,0 +1,173 @@
+@font-face{
+    font-family: roboto;
+    src: url('files/font/robotoMe.ttf');
+}
+@font-face{
+    font-family: creat;
+    src: url('files/font/Creattion.otf');
+}
+
+@font-face{
+    font-family: victor;
+    src: url('files/font/victor.ttf');
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url('files/stars.png');
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.nome-topo{
+    
+    background-image: url('files/topo-nome.png');
+
+    display: flex;
+    
+    align-items: center;
+
+    justify-content: center;
+
+    height: 50px;
+
+}
+
+.p-nome{
+    color: darkgray;
+
+    font-family: roboto;
+    font-size: 20px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+
+}
+
+.navbar{
+    background-color: rgb(95, 67, 67);
+    opacity: 0.7;
+
+    height: 40px;
+    width: 100%;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.link-nav{
+    color: wheat;
+    margin: 2px 20px 2px 20px;
+
+    font-family: roboto;
+}
+
+.link-nav:hover{
+    color: sienna;
+}
+
+
+
+
+.container{
+    background-color: rgba(131, 101, 63, 0.699);
+
+    border-radius: 5px;
+
+    width: 93%;
+    margin-top: 40px;
+
+}
+
+.container-top{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.info{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.c-nome{
+    margin: 0px;
+
+    color:rgba(255, 235, 205, 0.644);
+
+    font-family: creat;
+    
+    font-size: 90px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+
+    width: 900px;
+
+}
+
+.redes1{
+    width: 360px;
+}
+
+
+
+
+
+.linkRede{
+    display: flex;
+    flex-direction: row;
+    
+    width: 500px;
+
+    margin-top: 10px;
+
+    align-items: center;
+}
+
+.git, .in, .insta,  .fone{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 5px;
+
+    align-items: center;
+}
+
+.git-img, .in-img, .insta-img, .fone-img{
+    width: 40px;
+    height: 40px;
+
+}
+
+.a-git, .a-in, .a-insta, .a-fone{
+    margin-left: 15px;
+    font-family: victor;
+    color: white;
+    
+}
+
+.a-git:hover, .a-in:hover, .a-insta:hover{
+    color: rgb(207, 181, 141);
+}
