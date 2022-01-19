@@ -1,4 +1,5 @@
 imgGitEnter = function(){
+    window.alert()
     img = document.getElementById('gitImg')
 
     img.setAttribute('src','files/git.png')
