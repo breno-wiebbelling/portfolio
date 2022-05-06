@@ -1,0 +1,262 @@
+@font-face{
+    font-family: roboto;
+    src: url('../../font/robotoMe.ttf');
+}
+@font-face{
+    font-family: creattion;
+    src: url('../../font/Creattion.otf');
+}
+@font-face{
+    font-family: victor;
+    src: url('../../font/victor.ttf');
+}
+@font-face{
+    font-family: glacial;
+    src: url('../../font/GlacialIndifference-Regular.otf');
+}
+
+section{
+    margin-top: 5vh;
+    display: flex;
+}
+
+header {
+    position: relative;
+}
+
+/*REDES -------------------------------------------------------------------------------------------*/
+
+.curriculo{
+    background-color: rgba(95, 67, 67, 0.5);
+
+    width: 90%;
+    height: 50%;
+
+    border-radius: 10px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+.curriculo img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.curriculo div, .curriculo .download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curriculo h2{
+    font-family:creattion ;
+    font-size: 7vw;
+    text-align: center;
+
+    font-weight: 500;
+    color: rgba(186, 191, 207, 0.925);
+
+}
+
+.curriculo .redes{
+    flex-direction: column;
+    width: 60%;
+}
+
+.curriculo .redes div{    
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 90%;
+}
+
+.curriculo .redes a{
+    display: flex;
+    align-items: center;
+
+    font-family: victor;
+    color: aliceblue;
+    
+    margin-top: 2%;
+    min-width: 40%;
+}
+
+.curriculo .redes a img{
+    width: 8vh;
+    height: 8vh;
+
+    margin-right: 4px;
+    
+    border-radius: 0%;
+}
+
+.curriculo .redes a img:hover, .curriculo .redes a p:hover{
+    filter: brightness(50%);
+}
+
+
+.curriculo .redes a p{
+    font-size: 15px;
+}
+
+.curriculo .download{
+    width: 20%;
+    height: 20%;
+
+    background-color: rgba(233, 233, 229, 0.733);
+
+    justify-content: center;
+
+    color:  rgba(0, 0, 0, 0.822);
+
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 800;
+
+    border-bottom: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.curriculo .download:hover{
+    background-color: rgb(129, 129, 129);
+    color: rgba(0, 0, 0, 0.925);
+    border-color: rgb(181, 189, 113);
+
+}
+
+/*OBJETIVO -------------------------------------------------------------------------------------OBJETIVO------*/
+
+.objetivo{
+    width: 90%;
+    height: 20%;
+
+    background-color: rgba(255, 255, 255, 0.521);
+
+    border-radius: 3px;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 2%;
+
+    color: rgb(0, 0, 0);
+}
+
+.objetivo h2{
+    
+    font-family: victor;
+    
+    font-weight: 650;
+    font-size: 20px;
+}
+
+.objetivo p{
+    font-family: victor;
+    
+    font-weight: 600;
+    font-size: 13.5px;
+}
+
+
+/*HABILIDADES -------------------------------------------------------------------------------------HABILIDADES------*/
+
+.habilidades{
+
+    width: 70%;
+
+    background-color: rgba(0, 0, 0, 0.644);
+    border-radius: 3px;
+    
+    margin: 30px 0px 30px 0px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-items: center;
+
+}
+
+.h3-hab{
+    margin: 30px 0px 0px 100px;
+    color: yellowgreen;
+
+    font-family: victor;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+
+}
+
+.hab{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-family: glacial;
+    font-size: 20px;
+
+    color: white;
+}
+
+.hab1{
+
+    height: 158px;
+
+    margin: 10px 0px 40px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.hab2{
+
+    height: 40px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left:100px;
+
+}
+
+.li-hab{
+    font-size: 24px;
+    font-family: victor;
+    letter-spacing: 2px;
+}
+
+
+
+/*FORMAÇÃO -------------------------------------------------------------------------------------FORMAÇÃO------*/
+
+.h3-forma{
+    margin-left: 92px;
+}
+
+.forma{
+    width: 70%;
+    height: 300px;
+
+    background-color: rgba(26, 16, 90, 0.603);
+
+    margin: 30px 0px 30px 0px;
+
+    color: white;
+    
+    font-family: glacial;
+    font-size: 20px;
+}
+
+.p-forma{
+    margin: 40px 10px 10px 40px
+}
