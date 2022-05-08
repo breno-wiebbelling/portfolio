@@ -181,6 +181,10 @@ x
 
 
 @media (max-width: 718px){
+
+    header .nav-bar{
+        height: 1575px;
+    }
     .curriculo{
         flex-direction: column;
 
