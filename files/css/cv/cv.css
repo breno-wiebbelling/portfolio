@@ -136,6 +136,7 @@ x
 
     color: rgb(241, 231, 231);
 
+    text-align: justify;
     letter-spacing: 1.2px;
 }
 
@@ -149,7 +150,7 @@ x
     justify-content: center;
 
     width: 90%;
-    height: 40vh;
+    min-height: 40vh;
 }
 
 .habilidades div{
@@ -178,3 +179,41 @@ x
     margin-bottom: 4%;
 }
 
+
+@media (max-width: 718px){
+    .curriculo{
+        flex-direction: column;
+
+    }
+
+    .curriculo img{
+        width: 50vw;
+    }
+
+    .curriculo .redes{
+        width: 95vw;
+    }
+
+    .curriculo .redes h2{
+        font-size: 12vw;
+    }
+
+    .curriculo .redes div{
+        flex-direction: column-reverse;
+    }
+
+    .curriculo .redes div a{
+        font-size: 4vw;
+    }
+
+    .curriculo .download{
+        width: 40%;
+        height: 30px;
+        margin-top: 6%;
+    }
+
+    .habilidades div{
+        flex-direction: column;
+    }
+    
+}
