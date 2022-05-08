@@ -2,20 +2,31 @@
     font-family: roboto;
     src: url('../../font/robotoMe.ttf');
 }
-
-*{
-    margin: 0;
-    padding: 0;
+@font-face{
+    font-family: creattion;
+    src: url('../../font/Creattion.otf');
+}
+@font-face{
+    font-family: victor;
+    src: url('../../font/victor.ttf');
+}
+@font-face{
+    font-family: glacial;
+    src: url('../../font/GlacialIndifference-Regular.otf');
 }
 
 body{
     background-image: url('../../img/background/stars.png');
 
-    height: 100vh;
-    width: 100vw;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: roboto;
+    color: rgb(255, 255, 255);
+
 }
 
