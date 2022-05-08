@@ -216,6 +216,11 @@ x
         margin-top: 6%;
     }
 
+    .objetivo p{
+    
+        text-align: center;
+    }
+
     .habilidades div{
         flex-direction: column;
     }

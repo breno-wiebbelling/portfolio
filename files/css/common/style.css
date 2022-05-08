@@ -16,7 +16,10 @@
 }
 
 body{
-    background-image: url('../../img/background/stars.png');
+    /* background-image: url('../../img/background/stars.png');
+    background-size: cover; */
+
+    background: url(../../img/background/stars.png);
 
     display: flex;
     flex-direction: column;

@@ -38,6 +38,11 @@ section p{
 
 @media (max-width: 718px){
     
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
     section{
         justify-content: start;
         padding-top: 30px;
