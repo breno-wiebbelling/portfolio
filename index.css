@@ -1,39 +1,141 @@
-body, section, section p{
+body, section, .container, section p{
     display: flex;
     flex-direction: column;
 
     align-items: center;
     justify-content: center;
+}
 
-    height: 100vh;
+header{
+    position: relative;
 }
 
 section{
-    
+    height: 90vh;
+    width: 100%;
+}
+
+.apresentacao .container{
+    position: relative;
+
     width: 80%;
     height: 70%;
 
     border-radius: 3px;
 
-    margin: 6% 0% 4% 0%;
+    background-color: rgba(71, 64, 50, 0.452);
 
-    background-color: rgba(95, 67, 67, 0.452);
+    text-align: center;
+
 }
 
-section img{
-    height: 40%;
+.apresentacao .superior, .apresentacao .meio, .apresentacao .inferior{
+    height: 18%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao .superior{
+    flex-direction: column;
+
+    font-family: glacial;
+    letter-spacing: 3px;
+}
+
+.apresentacao h1, .apresentacao h4{
+    margin: 0%;
+    padding: 0%;
+}
+
+.apresentacao .superior h1{
+    font-size: 3vw;
+
+    margin: 0;
+}
+
+.apresentacao h4{
+    color: coral;
+}
+
+.apresentacao .meio{
+    height: 10%;
+
+    justify-content: center;
+
+    padding: 6px;
+}
+
+.apresentacao .rosto{
+    position: absolute;
+    left: 0;
+
+    height: 12vw;
     border-radius: 50%;
+
+    margin-left: 10vw;
+    margin-bottom: 10%;
 }
 
-section p{
+.apresentacao .inferior{
+    background-color: rgba(0, 0, 0, 0.185);
+
     height: 30%;
-    width: 65%;
 
-    margin:2% 0% 2% 0%;
-    padding:2% 0% 2% 0%;
-
-    background-color: rgba(95, 67, 67, 0.452);
+    justify-content: space-evenly;
 }
+
+.apresentacao .button-info{
+    background-color: #ffffff;
+    font-family: glacial;
+    font-weight: 900;
+
+    width: 150px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px transparent solid;
+    border-radius: 2px;
+
+    margin-top: 2%;
+
+    color: black;
+}
+
+.apresentacao .inferior .button-info:hover{
+    background-color: #ffffffd2;
+    border-color: black;
+}
+
+.apresentacao .inferior a img{
+    width: 8vh;
+    height: 8vh;
+
+    margin-right: 20px;
+    
+    border-radius: 0%;
+}
+
+.apresentacao .inferior a img:hover{
+    filter: brightness(75%);
+}
+
+.info .container{
+    background-color: rgba(80, 90, 100, 0.226);
+
+    height: 80%;
+    width: 80%;
+}
+
+.info .container p{
+    width: 70%;
+}
+
 
 
 @media (max-width: 718px){
@@ -41,6 +143,10 @@ section p{
     body{
         margin: 0;
         padding: 0;
+    }
+
+    header{
+        position: relative;
     }
 
     section{

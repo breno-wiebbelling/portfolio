@@ -1,3 +1,4 @@
+
 header{
     position: relative;
 }
@@ -21,7 +22,6 @@ section *{
 
 
 .curriculo{
-
     background-color: rgba(175, 147, 94, 0.274);
     justify-content: space-between;
     align-items: center;
@@ -168,7 +168,7 @@ section *{
 
 
 .forma{
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgba(41, 46, 68, 0.479);
     
     flex-direction: column;
     justify-content: center;
