@@ -1,0 +1,31 @@
+header{
+    position: relative;
+}
+
+section{
+    margin-top: 10%;
+}
+
+section div a{
+    display: flex;
+    align-items: center;
+
+    font-family: victor;
+    color: aliceblue;
+    
+    margin-top: 2%;
+    min-width: 40%;
+}
+
+section a img{
+    width: 8vh;
+    height: 8vh;
+
+    margin-right: 4px;
+    
+    border-radius: 0%;
+}
+
+section a img:hover, section a p:hover{
+    filter: brightness(75%);
+}

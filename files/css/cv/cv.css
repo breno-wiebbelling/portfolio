@@ -82,7 +82,7 @@ section *{
 .curriculo .redes a img:hover, .curriculo .redes a p:hover{
     filter: brightness(80%);
 }
-x
+
 .curriculo .redes a p{
     font-size: 15px;
 }
