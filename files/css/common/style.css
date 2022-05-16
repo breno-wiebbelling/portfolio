@@ -30,3 +30,17 @@ body{
 
 }
 
+body::-webkit-scrollbar {
+    width: 7px;                 
+}
+  
+body::-webkit-scrollbar-track {
+    background-image: url('../../img/background/stars.png');      
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(127, 133, 81, 0.836);
+    border-radius: 20px;   
+    border: 1px rgb(182, 175, 175) dotted;   
+}
+
