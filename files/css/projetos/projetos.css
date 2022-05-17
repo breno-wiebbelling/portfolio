@@ -1,0 +1,65 @@
+header {
+    position: relative;
+}
+
+section, section div, section div a{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 90vw;
+    height: 40vh;
+    background-color: rgba(175, 147, 94, 0.164);
+    
+    margin-top: 5vh;
+
+    justify-content: space-evenly;
+
+    border-radius: 3px;
+}
+
+section img{
+    height: 80%;
+    width: 20%;
+
+    border-radius: 3%;
+}
+
+section div{
+    width: 60%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section div a{
+    background-color: rgb(110, 67, 51);
+    font-size: 1vw;
+    color: white;
+
+    width: 30%;
+    height: 20%;
+
+    border-radius: 2px;
+    border-bottom: 1px transparent solid;
+
+}
+
+section div a:hover{
+    background-color: rgb(97, 60, 47);
+    border-color: beige;
+}
+
+section div h3{
+    margin: 0;
+    padding: 0;
+}
+
+section div p{
+    width: 90%;
+
+    font-size: 1.05vw;
+}
