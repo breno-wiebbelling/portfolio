@@ -140,14 +140,6 @@ section{
 
 @media (max-width: 718px){
     
-    body{
-        margin: 0;
-        padding: 0;
-    }
-
-    header{
-        position: relative;
-    }
 
     section{
         justify-content: start;

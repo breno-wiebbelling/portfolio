@@ -2,15 +2,13 @@ header{
     width: 100%;
     height: 80px;
 
-    background-color: rgba(127, 133, 81);
+    background-color: rgba(127, 133, 81, 0.685);
 
     position: fixed;
     top: 0;
 
     margin: 0;
     padding: 0;
-
-    z-index: 1;
 }
 
 header *{
@@ -22,7 +20,7 @@ header input, header label img{
     display: none;
 }
 
-header, header p, header div{
+header, header p, header div, header a{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +34,6 @@ header p{
     width: 100%;
     height: 55%;
     
-    font-family: roboto;
     font-size: 3vh;
 
     color: darkgray;
@@ -47,35 +44,26 @@ header p{
 }
 
 header div{
-    opacity: 0.7;
-
     flex-direction: row;
 
     width: 100%;
     height: 45%;
 }
 
-
 header a {
     height: 100%;
     width: 15%;
 
-    font-family: roboto;
     font-size: 17px;
-    text-decoration: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     color: #ffffff;
 
-    border-bottom: 2px transparent solid;
+    border-bottom: 1px transparent solid;
 }
 
 header a:hover{
-    color: #f1e7e7;
-    border-color: #ffffff;
+    color: #f1e7e7de;
+    border-color: #f1e7e7de;
 }
 
 @media (max-width: 718px){
@@ -85,7 +73,7 @@ header a:hover{
         justify-content: space-between;
         align-items: baseline;
 
-        background-color: rgba(127, 133, 81, 0.712);
+        width: 100%;
 
     }
 
@@ -95,18 +83,16 @@ header a:hover{
         background-image: none;
 
         color: #f1e7e7;
-
     }
 
     header input:checked + .nav-bar{
         transform: translateX(0%);
-
     }
     
-
     header label img{
-        display: inline;
+        display:inline;
     }
+
     header label img{
         transform: translateX(-90%);
         z-index: 3;
@@ -115,19 +101,20 @@ header a:hover{
 
     .nav-bar{
         transform: translateX(-200%);
+        transition: 0.6s cubic-bezier(0, 0, 0.65, 1);
         
         flex-direction: column;
-        justify-content: start;
+        justify-content: space-evenly;
 
         width: 60%;
         height: 100vh;
-        margin-top: 80px;
 
-        position: absolute;
+        position: fixed;
+        left: 0;
+        top: 0;
 
-        background-color: rgb(0, 0, 0);
-        
-        z-index:2;
+        background-color: rgb(127, 133, 81);
+        z-index: 1;
     }
 
     .nav-bar a{
