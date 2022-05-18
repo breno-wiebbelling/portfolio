@@ -70,11 +70,8 @@ header a:hover{
 
     header{
         flex-direction: row;
-        justify-content: space-between;
-        align-items: baseline;
-
+        
         width: 100%;
-
     }
 
     header p{
@@ -100,17 +97,19 @@ header a:hover{
     }
 
     .nav-bar{
-        transform: translateX(-200%);
+        transform: translateX(+200%);
         transition: 0.6s cubic-bezier(0, 0, 0.65, 1);
         
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: start;
 
         width: 60%;
-        height: 100vh;
+        height: 100%;
+
+        margin-top: 80px;
 
         position: fixed;
-        left: 0;
+        right: 0;
         top: 0;
 
         background-color: rgb(127, 133, 81);

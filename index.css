@@ -76,7 +76,6 @@ section{
     border-radius: 50%;
 
     margin-left: 10vw;
-    margin-bottom: 10%;
 }
 
 .apresentacao .inferior{
@@ -85,6 +84,19 @@ section{
     height: 30%;
 
     justify-content: space-evenly;
+}
+
+.apresentacao .inferior a img{
+    width: 8vh;
+    height: 8vh;
+
+    margin-right: 20px;
+    
+    border-radius: 0%;
+}
+
+.apresentacao .inferior a img:hover{
+    filter: brightness(75%);
 }
 
 .apresentacao .button-info{
@@ -112,19 +124,6 @@ section{
     border-color: black;
 }
 
-.apresentacao .inferior a img{
-    width: 8vh;
-    height: 8vh;
-
-    margin-right: 20px;
-    
-    border-radius: 0%;
-}
-
-.apresentacao .inferior a img:hover{
-    filter: brightness(75%);
-}
-
 .info .container{
     background-color: rgba(80, 90, 100, 0.226);
 
@@ -140,7 +139,6 @@ section{
 
 @media (max-width: 718px){
     
-
     section{
         justify-content: start;
         padding-top: 30px;
@@ -154,6 +152,32 @@ section{
         font-size: 13px;
         padding: 0px 10% 0px 10%;
     }
+
+
+    .apresentacao .superior{
+        flex-direction: column-reverse;
+        margin-bottom: 10%;
+    }
+
+    .apresentacao .rosto{
+        position: relative;
+        margin: 0;
+        margin-bottom: 5%;
+
+        height: 17vh;
+    }
+
+    .apresentacao .inferior{
+        background-color: transparent;
+    }
+
+    .apresentacao .inferior a img{
+        width: 7.3vh;
+        height: 7.3vh;
+
+        margin-right: 0;
+    }
+    
 }
 
 
