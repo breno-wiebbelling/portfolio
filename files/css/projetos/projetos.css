@@ -20,17 +20,12 @@ section div, section a{
 
 section{
     width: 90vw;
-    height: 40vh;
+    min-height: 40vh;
     background-color: rgba(175, 147, 94, 0.356);
     
     margin-top: 5vh;
     padding: 3% 0% 3% 0%;
-
-    justify-content: space-evenly;
-
     border-radius: 3px;
-
-    position: relative;
 }
 
 section img{
@@ -68,11 +63,7 @@ section a:hover{
 }
 
 section h3{
-
-    position: absolute;
-    top:0;
-
-    margin:3vw 0;
+    margin: 0;
     padding: 0;
 
     font-weight: 500;
@@ -86,16 +77,17 @@ section p{
 
 @media (max-width: 718px){
     section div{
-        flex-direction: column;
+        flex-direction: column;]
     }
 
     section h3{
         font-size: 4vw;
+        position: relative;
     }
 
     section img{
-        width: 40vw;
-        height: 40vw;
+        width: 200px;
+        height: 200px;
     }
 
     section p{
@@ -105,8 +97,8 @@ section p{
     }
 
     section a{
+        position: relative;
         width: 30vw;
         height: 7vw;
-
     }
 }
