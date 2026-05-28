@@ -140,6 +140,6 @@ function setLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    var saved = localStorage.getItem('lang') || 'pt';
+    var saved = localStorage.getItem('lang') || 'en';
     setLanguage(saved);
 });
