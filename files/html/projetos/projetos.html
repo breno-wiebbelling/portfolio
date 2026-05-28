@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,38 +20,54 @@
             <a href="https://brenoassis.netlify.app/">
                 Home
             </a>
-            <a href="../cv/cv.html">
+            <a href="../cv/cv.html" data-i18n="nav-curriculo">
                 Currículo
             </a>
-            <a href="../projetos/projetos.html">
+            <a href="../projetos/projetos.html" data-i18n="nav-projetos">
                 Projetos
             </a>
-            <a href="../contato/contato.html">
+            <a href="../contato/contato.html" data-i18n="nav-contato">
                 Contato
             </a>
-        </div> 
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="pt" onclick="setLanguage('pt')">PT</button>
+                <span>|</span>
+                <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+            </div>
+        </div>
     </header>
 
     <section>
-        <h3>Data de finalização de curso</h3>
+        <h3 data-i18n="proj-3-title">Vacation Request Automation</h3>
         <div>
-            <img src="../../img/projetos/cronograma.png">
             <div class="descricao">
-                <p>Neste projeto, pude praticar alguns conhecimentos relacionados a html, css e js; realizando operações básicas de coleta e tratamento de dados. Este programa, recebendo informações do usuário, é capaz de retornar uma data estimada para a finalização de um curso.</p>
-                <a href="https://github.com/breno-wiebbelling/cronogramaIngles" target="_blank">Acesse o repositório!</a>
+                <p data-i18n="proj-3-desc">Automação de solicitação de férias desenvolvida com SAP Build. O projeto apresenta casos de uso em vídeos demonstrativos.</p>
+                <a href="https://youtube.com/playlist?list=PLgIuQ4waXC25Yev9UlWu6fqrSCoNQvIja&si=tvmDe4WGiq1JOqHd" target="_blank" data-i18n="proj-3-link">Assistir apresentação!</a>
             </div>
         </div>
     </section>
 
     <section>
-        <h3>Filtro de medicamentos</h3>
+        <h3 data-i18n="proj-1-title">Data de finalização de curso</h3>
         <div>
-            <img src="../../img/projetos/filtro-de-medicamentos.jpg">
+            <img src="../../img/projetos/cronograma.png">
             <div class="descricao">
-                <p>Com este programa, pratiquei conhecimentos de estilização de site, metodos de envio de informação,leitura de grandes arquivos e formulários interativos. </p>
-                <a href="https://filtro-de-medicamentos.herokuapp.com/" target="_blank">Acesse o site!</a>
+                <p data-i18n="proj-1-desc">Neste projeto, pude praticar alguns conhecimentos relacionados a html, css e js; realizando operações básicas de coleta e tratamento de dados. Este programa, recebendo informações do usuário, é capaz de retornar uma data estimada para a finalização de um curso.</p>
+                <a href="https://github.com/breno-wiebbelling/cronogramaIngles" target="_blank" data-i18n="proj-1-link">Acesse o repositório!</a>
             </div>
         </div>
     </section>
+
+    <section>
+        <h3 data-i18n="proj-2-title">Filtro de medicamentos</h3>
+        <div>
+            <img src="../../img/projetos/filtro-de-medicamentos.jpg">
+            <div class="descricao">
+                <p data-i18n="proj-2-desc">Com este programa, pratiquei conhecimentos de estilização de site, metodos de envio de informação,leitura de grandes arquivos e formulários interativos. </p>
+                <a href="https://filtro-de-medicamentos.herokuapp.com/" target="_blank" data-i18n="proj-2-link">Acesse o site!</a>
+            </div>
+        </div>
+    </section>
+    <script src="../../js/lang.js"></script>
 </body>
 </html>

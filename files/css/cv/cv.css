@@ -173,11 +173,110 @@ section *{
 }
 
 
+/* Experience section */
+.experiencia {
+    background-color: rgba(41, 46, 68, 0.6);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 90%;
+}
+
+.experiencia h2 {
+    font-family: monospace;
+    font-weight: 650;
+    font-size: 20px;
+    color: rgba(186, 191, 207, 0.925);
+}
+
+.exp-company {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: victor;
+    font-size: 18px;
+    color: rgba(186, 191, 207, 0.9);
+}
+
+.exp-period {
+    font-size: 14px;
+    color: rgba(175, 147, 94, 0.9);
+}
+
+.exp-role {
+    width: 100%;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.exp-role h3 {
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: 650;
+    color: rgba(241, 231, 231, 0.9);
+    margin-bottom: 4px;
+}
+
+.exp-dates {
+    font-size: 13px;
+    color: rgba(175, 147, 94, 0.8);
+    padding-bottom: 8px;
+}
+
+.exp-role ul {
+    padding-left: 20px;
+    color: rgb(241, 231, 231);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 14.5px;
+    line-height: 1.6;
+    list-style: disc;
+}
+
+.exp-role li {
+    padding: 2px 0;
+}
+
+/* Updated skills grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    height: auto;
+    padding-top: 12px;
+}
+
+.skill-group {
+    min-width: 130px;
+    text-align: center;
+}
+
+.skill-group h4 {
+    font-family: victor;
+    font-size: 13px;
+    color: rgba(175, 147, 94, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(175, 147, 94, 0.4);
+    margin-bottom: 6px;
+}
+
+.skill-group ul {
+    font-family: victor;
+    font-size: 18px;
+    margin-right: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.skill-group li {
+    color: rgb(241, 231, 231);
+    padding: 1px 0;
+}
+
 @media (max-width: 718px){
 
-    header .nav-bar{
-        height: 1575px;
-    }
     .curriculo{
         flex-direction: column;
 
@@ -224,5 +323,25 @@ section *{
     .forma{
         padding: 17% 8% 17% 8%;
         font-size: 2.5vw;
+    }
+
+    .experiencia {
+        padding: 6% 4%;
+    }
+
+    .exp-role ul {
+        font-size: 3.5vw;
+    }
+
+    .skills-grid {
+        gap: 16px;
+    }
+
+    .skill-group {
+        min-width: 100px;
+    }
+
+    .skill-group ul {
+        font-size: 14px;
     }
 }

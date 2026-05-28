@@ -4,74 +4,315 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-
-    <link rel="stylesheet" href="./files/css/common/header.css">
+    <title>Breno Wiebbelling — Portfolio</title>
     <link rel="stylesheet" href="./files/css/common/style.css">
     <link rel="stylesheet" href="index.css">
-
+</head>
 <body>
-    <header>
-        <p>Breno Wiebbelling</p>
-        <label for="nav-controler">
-            <img src="./files/img/header/grupo.svg">
-        </label>
-        <input id="nav-controler" type="checkbox">
-        <div class="nav-bar">
-            <a href="https://brenoassis.netlify.app/">
-                Home
-            </a>
-            <a href="./files/html/cv/cv.html">
-                Currículo
-            </a>
-            <a href="./files/html/projetos/projetos.html">
-                Projetos
-            </a>
-            <a href="./files/html/contato/contato.html">
-                Contato
-            </a>
-        </div> 
-    </header>
-    
-    <section class="apresentacao">
-        <div class="container">
-            <div class="superior">
-                
-                <div>
-                    <h4>PORTFOLIO</h4>
-                    <h1>Breno Wiebbelling</h1>
-                </div>
-                <img src="./files/img/avatar/rosto.png" class="rosto" alt="Foto de Breno Wiebbelling">            
-            
-            </div>
-            <div class="inferior">
-                <div>
-                    <a href="https://github.com/breno-wiebbelling" target="_blank">
-                        <img class="brilho" src="./files/img/logos/git.png">
-                    </a>
-                    <a href="tel: 51997146648">
-                        <img src="./files/img/logos/fone.png">
-                    </a>
-                
-                    <a href="https://www.linkedin.com/in/breno-wiebbelling-de-assis-7013961a0/" target="_blank">
-                        <img src="./files/img/logos/in.png">
-                    </a>
-            
-                    <a href="mailto: brenowdea@gmail.com" target="_blank">
-                        <img src="./files/img/logos/email.png">
-                    </a>
-                </div>    
-            </div>
-            <a class="button-info" href="#info">
-                SAIBA MAIS
-            </a>
-        </div>
-    </section> 
 
-    <section id="info" class="info">
-        <div class="container">
-            <p>Olá, meu nome é Breno Wiebbelling. Este é meu portfolio que ainda está em construção e logo terá mais informações.</p>
+    <div class="bg-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- ===== NAV ===== -->
+    <nav id="navbar">
+        <a href="#hero" class="nav-logo">Breno Assis</a>
+        <ul class="nav-links">
+            <li><a href="#experience" data-i18n="nav-experience">Experiência</a></li>
+            <li><a href="#education"  data-i18n="nav-education">Formação</a></li>
+            <li><a href="#skills"     data-i18n="nav-skills-link">Habilidades</a></li>
+            <li><a href="#projects"   data-i18n="nav-projetos">Projetos</a></li>
+            <li><a href="#contact"    data-i18n="nav-contato">Contato</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="pt" onclick="setLanguage('pt')">PT</button>
+                <span>|</span>
+                <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+            </div>
+            <button class="nav-hamburger" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-    </section> 
+    </nav>
+
+    <!-- Mobile overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">&#10005;</button>
+        <ul>
+            <li><a href="#experience" data-i18n="nav-experience">Experiência</a></li>
+            <li><a href="#education"  data-i18n="nav-education">Formação</a></li>
+            <li><a href="#skills"     data-i18n="nav-skills-link">Habilidades</a></li>
+            <li><a href="#projects"   data-i18n="nav-projetos">Projetos</a></li>
+            <li><a href="#contact"    data-i18n="nav-contato">Contato</a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn" data-lang="pt" onclick="setLanguage('pt')">PT</button>
+            <span>|</span>
+            <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        </div>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <span class="hero-label reveal">PORTFOLIO</span>
+                <h1 class="hero-name reveal" style="--delay:.1s">Breno Assis</h1>
+                <div class="hero-role-wrap reveal" style="--delay:.22s">
+                    <span class="hero-role-text">Software Engineer II @ Dell</span>
+                </div>
+                <p class="hero-summary reveal" style="--delay:.34s" data-i18n="intro-text">
+                    Desenvolvedor backend altamente motivado, com forte disposição para colaborar e construir soluções em equipe.
+                </p>
+                <div class="hero-actions reveal" style="--delay:.46s">
+                    <a href="#experience" class="btn-primary" data-i18n="btn-experience">Ver Experiência</a>
+                    <a href="./files/curriculo.pdf" download class="btn-secondary" data-i18n="btn-baixar-pdf">Baixar PDF</a>
+                </div>
+                <div class="hero-socials reveal" style="--delay:.58s">
+                    <a href="https://github.com/breno-wiebbelling" target="_blank" aria-label="GitHub">
+                        <img src="./files/img/logos/git.png" alt="GitHub">
+                    </a>
+                    <a href="tel:+5551997146648" aria-label="Phone">
+                        <img src="./files/img/logos/fone.png" alt="Phone">
+                    </a>
+                    <a href="https://www.linkedin.com/in/breno-wiebbelling-de-assis-lopes-7013961a0/" target="_blank" aria-label="LinkedIn">
+                        <img src="./files/img/logos/in.png" alt="LinkedIn">
+                    </a>
+                    <a href="mailto:brenoassisw@gmail.com" aria-label="Email">
+                        <img src="./files/img/logos/email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal-right">
+                <div class="profile-container">
+                    <div class="profile-glow"></div>
+                    <div class="profile-ring">
+                        <img src="./files/img/avatar/profile.png" alt="Breno Assis" class="profile-img">
+                    </div>
+                    <div class="profile-badge">SE II @ Dell</div>
+                </div>
+            </div>
+        </div>
+        <a href="#experience" class="scroll-down" aria-label="Scroll down">
+            <div class="scroll-arrow"></div>
+        </a>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section">
+        <div class="section-header reveal">
+            <span class="section-num">01</span>
+            <h2 data-i18n="cv-exp-title">Experiência Profissional</h2>
+        </div>
+        <div class="timeline">
+            <div class="company-header reveal-left">
+                <span class="company-name">Dell Technologies</span>
+                <span class="company-period" data-i18n="cv-exp-period">2023 - Presente</span>
+            </div>
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item reveal-left" style="--delay:.05s">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="tl-header">
+                        <h3 data-i18n="cv-exp-role3">Software Engineer II</h3>
+                        <span class="tl-date" data-i18n="cv-exp-role3-dates">Fev 2025 - Presente</span>
+                    </div>
+                    <ul>
+                        <li data-i18n="cv-exp3-1">Atuando como Application Health Owner, criando monitores de aplicação em múltiplas camadas do sistema.</li>
+                        <li data-i18n="cv-exp3-2">Recebi o prêmio Sr. Director Bravo pela atuação como Committee Leader no Programa ITDP (2024–2026).</li>
+                        <li data-i18n="cv-exp3-3">Membro do time central do Programa de Estágio IT Academy.</li>
+                        <li data-i18n="cv-exp3-4">Premiado como Entrevistador da GenAI Academy.</li>
+                        <li data-i18n="cv-exp3-5">Mentorei três colaboradores da empresa, incluindo um membro internacional.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-left" style="--delay:.1s">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="tl-header">
+                        <h3 data-i18n="cv-exp-role2">Software Engineer I</h3>
+                        <span class="tl-date" data-i18n="cv-exp-role2-dates">Jul 2024 - Fev 2025</span>
+                    </div>
+                    <ul>
+                        <li data-i18n="cv-exp2-1">Entrega de tarefas com pesquisa em múltiplas camadas arquiteturais.</li>
+                        <li data-i18n="cv-exp2-2">Atuei como Deployment Owner, auxiliando o time com novas práticas de deploy.</li>
+                        <li data-i18n="cv-exp2-3">Desenvolvi Indicadores-Chave de Performance para ilustrar o desempenho nos fluxos internos de negócio.</li>
+                        <li data-i18n="cv-exp2-4">Recebi o prêmio Sr. Director Bravo pelo trabalho em equipe em um dos maiores eventos de TI da Dell.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-left" style="--delay:.15s">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="tl-header">
+                        <h3 data-i18n="cv-exp-role1">Estagiário</h3>
+                        <span class="tl-date" data-i18n="cv-exp-role1-dates">Jul 2023 - Jul 2024</span>
+                    </div>
+                    <ul>
+                        <li data-i18n="cv-exp1-1">Convidado para compartilhar minha experiência de estágio na Dell no "TheDevConf 2023".</li>
+                        <li data-i18n="cv-exp1-2">Após três meses, já era capaz de identificar e resolver defeitos nos ambientes de Teste e Produção.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section">
+        <div class="section-header reveal">
+            <span class="section-num">02</span>
+            <h2 data-i18n="cv-formacao-title">Formação acadêmica</h2>
+        </div>
+        <div class="edu-grid">
+            <div class="edu-card reveal" style="--delay:.00s">
+                <div class="edu-badge"><img src="./files/img/education/ifsul.png" alt="IFSul"></div>
+                <div class="edu-info">
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    <span>IFSul Gravataí &middot; 2021–2024</span>
+                </div>
+            </div>
+            <div class="edu-card reveal" style="--delay:.15s">
+                <div class="edu-badge"><img src="./files/img/education/unirritter.png" alt="Unirritter"></div>
+                <div class="edu-info">
+                    <h3 data-i18n="cv-formacao-2">Pós-graduação em IA e Ciência de Dados — Unirritter (2025)</h3>
+                    <span>Unirritter &middot; 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+        <div class="section-header reveal">
+            <span class="section-num">03</span>
+            <h2 data-i18n="cv-habilidades-title">Habilidades</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category reveal" style="--delay:.00s"><h4 data-i18n="cv-skill-backend">Back-end</h4><div class="skill-tags"><span>Java Spring</span><span>Node.js</span></div></div>
+            <div class="skill-category reveal" style="--delay:.06s"><h4 data-i18n="cv-skill-web">Web</h4><div class="skill-tags"><span>ReactJs</span><span>AngularJs</span></div></div>
+            <div class="skill-category reveal" style="--delay:.12s"><h4 data-i18n="cv-skill-db">Banco de Dados</h4><div class="skill-tags"><span>Oracle</span><span>MongoDB</span></div></div>
+            <div class="skill-category reveal" style="--delay:.18s"><h4 data-i18n="cv-skill-messaging">Mensageria</h4><div class="skill-tags"><span>Kafka</span><span>RabbitMQ</span><span>IBMMQ</span></div></div>
+            <div class="skill-category reveal" style="--delay:.24s"><h4 data-i18n="cv-skill-monitoring">Monitoramento</h4><div class="skill-tags"><span>Grafana</span><span>Splunk</span><span>Dynatrace</span></div></div>
+            <div class="skill-category reveal" style="--delay:.30s"><h4 data-i18n="cv-skill-sap">SAP</h4><div class="skill-tags"><span>SAP ABAP</span><span>SAP Build</span><span>SAP GenAI Hub</span></div></div>
+            <div class="skill-category reveal" style="--delay:.36s"><h4 data-i18n="cv-skill-data">Dados</h4><div class="skill-tags"><span>GraphQL</span><span>Redis</span></div></div>
+            <div class="skill-category reveal" style="--delay:.42s"><h4 data-i18n="cv-skill-infra">Infraestrutura</h4><div class="skill-tags"><span>Docker</span><span>Podman</span><span>AWS EC2</span></div></div>
+            <div class="skill-category reveal" style="--delay:.48s"><h4 data-i18n="cv-skill-ai">Inteligência Artificial</h4><div class="skill-tags"><span>SDD/SDLC</span><span>AI-Augmented Eng.</span></div></div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+        <div class="section-header reveal">
+            <span class="section-num">04</span>
+            <h2 data-i18n="nav-projetos">Projetos</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card reveal" style="--delay:.00s">
+                <div class="project-top">
+                    <span class="project-tag">SAP Build</span>
+                    <h3 data-i18n="proj-3-title">Vacation Request Automation</h3>
+                    <p data-i18n="proj-3-desc">Automação de solicitação de férias desenvolvida com SAP Build. O projeto apresenta casos de uso em vídeos demonstrativos.</p>
+                </div>
+                <a href="https://youtube.com/playlist?list=PLgIuQ4waXC25Yev9UlWu6fqrSCoNQvIja&si=tvmDe4WGiq1JOqHd" target="_blank" class="project-link" data-i18n="proj-3-link">Assistir apresentação!</a>
+            </div>
+            <div class="project-card reveal" style="--delay:.10s">
+                <div class="project-top">
+                    <span class="project-tag">HTML · CSS · JS</span>
+                    <h3 data-i18n="proj-1-title">Data de finalização de curso</h3>
+                    <p data-i18n="proj-1-desc">Neste projeto, pude praticar alguns conhecimentos relacionados a html, css e js; realizando operações básicas de coleta e tratamento de dados.</p>
+                </div>
+                <a href="https://github.com/breno-wiebbelling/cronogramaIngles" target="_blank" class="project-link" data-i18n="proj-1-link">Acesse o repositório!</a>
+            </div>
+            <div class="project-card reveal" style="--delay:.20s">
+                <div class="project-top">
+                    <span class="project-tag">Node.js</span>
+                    <h3 data-i18n="proj-2-title">Filtro de medicamentos</h3>
+                    <p data-i18n="proj-2-desc">Com este programa, pratiquei conhecimentos de estilização de site, métodos de envio de informação e formulários interativos.</p>
+                </div>
+                <a href="https://filtro-de-medicamentos.herokuapp.com/" target="_blank" class="project-link" data-i18n="proj-2-link">Acesse o site!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+        <div class="section-header reveal">
+            <span class="section-num">05</span>
+            <h2 data-i18n="nav-contato">Contato</h2>
+        </div>
+        <div class="contact-grid reveal">
+            <a href="https://github.com/breno-wiebbelling" target="_blank" class="contact-card">
+                <img src="./files/img/logos/git.png" alt="GitHub">
+                <div>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">breno-wiebbelling</span>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/breno-wiebbelling-de-assis-lopes-7013961a0/" target="_blank" class="contact-card">
+                <img src="./files/img/logos/in.png" alt="LinkedIn">
+                <div>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">Breno Wiebbelling de Assis</span>
+                </div>
+            </a>
+            <a href="mailto:brenoassisw@gmail.com" class="contact-card">
+                <img src="./files/img/logos/email.png" alt="Email">
+                <div>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">brenoassisw@gmail.com</span>
+                </div>
+            </a>
+            <a href="tel:+5551997146648" class="contact-card">
+                <img src="./files/img/logos/fone.png" alt="Phone">
+                <div>
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+55 51 99714-6648</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Breno Wiebbelling de Assis &middot; <span id="footer-year"></span></p>
+    </footer>
+
+    <script src="./files/js/lang.js"></script>
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        var navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', function () {
+            navbar.classList.toggle('scrolled', window.scrollY > 60);
+            var pos = window.scrollY + 100;
+            document.querySelectorAll('section[id]').forEach(function (sec) {
+                var link = document.querySelector('.nav-links a[href="#' + sec.id + '"]');
+                if (!link) return;
+                link.classList.toggle('active', pos >= sec.offsetTop && pos < sec.offsetTop + sec.offsetHeight);
+            });
+        });
+
+        var mobileMenu = document.getElementById('mobileMenu');
+        document.getElementById('navToggle').addEventListener('click', function () { mobileMenu.classList.add('open'); });
+        document.getElementById('mobileClose').addEventListener('click', function () { mobileMenu.classList.remove('open'); });
+        mobileMenu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { mobileMenu.classList.remove('open'); }); });
+
+        var revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal, .reveal-right, .reveal-left').forEach(function (el) { revealObserver.observe(el); });
+
+    </script>
 </body>
 </html>

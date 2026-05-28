@@ -20,84 +20,181 @@
             <a href="https://brenoassis.netlify.app/">
                 Home
             </a>
-            <a href="../cv/cv.html">
+            <a href="../cv/cv.html" data-i18n="nav-curriculo">
                 Currículo
             </a>
-            <a href="../projetos/projetos.html">
+            <a href="../projetos/projetos.html" data-i18n="nav-projetos">
                 Projetos
             </a>
-            <a href="../contato/contato.html">
+            <a href="../contato/contato.html" data-i18n="nav-contato">
                 Contato
             </a>
-        </div> 
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="pt" onclick="setLanguage('pt')">PT</button>
+                <span>|</span>
+                <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+            </div>
+        </div>
     </header>
 
     <section class="curriculo">
-
         <img src="../../img/avatar/rosto.png" alt="Foto de Breno Wiebbelling">
         <div class="redes">
             <h2>Breno Wiebbelling</h2>
-               
+
             <div>
                 <a href="https://github.com/breno-wiebbelling" target="_blank">
                     <img class="brilho" src="../../img/logos/git.png">
-                    <p>BRENO-WIEBBELLING</p>     
+                    <p>BRENO-WIEBBELLING</p>
                 </a>
-                <a href="tel: 51997146648">
+                <a href="tel:+5551997146648">
                     <img src="../../img/logos/fone.png">
-                    <p>51 99714-6648</p>
+                    <p>+55 51 997146648</p>
                 </a>
             </div>
-                   
+
             <div>
                 <a href="https://www.linkedin.com/in/breno-wiebbelling-de-assis-lopes-7013961a0/" target="_blank">
                     <img src="../../img/logos/in.png">
-                    <p>BRENO WIEBBELLING DE ASSIS LOPES</p>       
+                    <p>BRENO WIEBBELLING DE ASSIS</p>
                 </a>
-
-                <a href="mailto: brenowdea@gmail.com" target="_blank">
+                <a href="mailto:brenoassisw@gmail.com" target="_blank">
                     <img src="../../img/logos/email.png">
-                    <p>brenowdea@gmail.com</p>
+                    <p>brenoassisw@gmail.com</p>
                 </a>
-            </div> 
-        
+            </div>
         </div>
 
-        <a class="download" href download="../curriculo.pdf">
+        <a class="download" href="../../curriculo.pdf" download data-i18n="btn-baixar-pdf">
             Baixar PDF
-        </a>  
-    
+        </a>
     </section>
 
     <section class="objetivo">
         <div>
-            <h2>Objetivo</h2>
-            <p>Praticar e aprofundar conhecimentos estabelecidos através de aprendizados acadêmicos e independentes; podendo assim conhecer e interagir em práticas e produção de software; além de trazer melhorias, atuação e fortalecimento à empresa que estarei atuando.</p>
-        </div>  
+            <h2 data-i18n="cv-summary-title">Resumo</h2>
+            <p data-i18n="cv-summary-text">Desenvolvedor backend altamente motivado, com forte disposição para colaborar e construir soluções em equipe. Comprometido em assumir responsabilidades e entregar soluções que vão além dos requisitos, atendendo às reais necessidades do negócio.</p>
+        </div>
     </section>
-    
+
+    <section class="experiencia">
+        <h2 data-i18n="cv-exp-title">Experiência Profissional</h2>
+        <div class="exp-company">
+            <span>Dell Technologies</span>
+            <span class="exp-period" data-i18n="cv-exp-period">2023 - Presente</span>
+        </div>
+
+        <div class="exp-role">
+            <h3 data-i18n="cv-exp-role3">Software Engineer II</h3>
+            <p class="exp-dates" data-i18n="cv-exp-role3-dates">Fev 2025 - Presente</p>
+            <ul>
+                <li data-i18n="cv-exp3-1">Atuando como Application Health Owner, criando monitores de aplicação em múltiplas camadas do sistema.</li>
+                <li data-i18n="cv-exp3-2">Recebi o prêmio Sr. Director Bravo pela atuação como Committee Leader no Programa ITDP (2024–2026).</li>
+                <li data-i18n="cv-exp3-3">Membro do time central do Programa de Estágio IT Academy.</li>
+                <li data-i18n="cv-exp3-4">Premiado como Entrevistador da GenAI Academy.</li>
+                <li data-i18n="cv-exp3-5">Mentorei três colaboradores da empresa, incluindo um membro internacional.</li>
+            </ul>
+        </div>
+
+        <div class="exp-role">
+            <h3 data-i18n="cv-exp-role2">Software Engineer I</h3>
+            <p class="exp-dates" data-i18n="cv-exp-role2-dates">Jul 2024 - Fev 2025</p>
+            <ul>
+                <li data-i18n="cv-exp2-1">Entrega de tarefas com pesquisa em múltiplas camadas arquiteturais.</li>
+                <li data-i18n="cv-exp2-2">Atuei como Deployment Owner, auxiliando o time com novas práticas de deploy.</li>
+                <li data-i18n="cv-exp2-3">Desenvolvi Indicadores-Chave de Performance para ilustrar o desempenho nos fluxos internos de negócio.</li>
+                <li data-i18n="cv-exp2-4">Recebi o prêmio Sr. Director Bravo pelo trabalho em equipe em um dos maiores eventos de TI da Dell.</li>
+            </ul>
+        </div>
+
+        <div class="exp-role">
+            <h3 data-i18n="cv-exp-role1">Estagiário</h3>
+            <p class="exp-dates" data-i18n="cv-exp-role1-dates">Jul 2023 - Jul 2024</p>
+            <ul>
+                <li data-i18n="cv-exp1-1">Convidado para compartilhar minha experiência de estágio na Dell no "TheDevConf 2023".</li>
+                <li data-i18n="cv-exp1-2">Após três meses, já era capaz de identificar e resolver defeitos nos ambientes de Teste e Produção.</li>
+            </ul>
+        </div>
+    </section>
+
     <section class="habilidades">
-        <h3>Habilidades</h3>
-        <div>
-            <ul>
-                <li class="li-hab">HTML/CSS/JS</li>
-                <li class="li-hab">Node JS</li>
-            </ul>
-            <ul>
-                <li class="li-hab">Python</li>
-                <li class="li-hab">Scrum</li>    
-            </ul>
-            <ul>
-                <li class='li-hab'>PostgreSQL</li>
-                <li class='li-hab'>GitHub</li>
-            </ul> 
+        <h3 data-i18n="cv-habilidades-title">Habilidades</h3>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h4 data-i18n="cv-skill-backend">Back-end</h4>
+                <ul>
+                    <li class="li-hab">Java Spring</li>
+                    <li class="li-hab">Node.js</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4 data-i18n="cv-skill-web">Web</h4>
+                <ul>
+                    <li class="li-hab">ReactJs</li>
+                    <li class="li-hab">AngularJs</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4 data-i18n="cv-skill-db">Banco de Dados</h4>
+                <ul>
+                    <li class="li-hab">Oracle</li>
+                    <li class="li-hab">MongoDB</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4 data-i18n="cv-skill-messaging">Mensageria</h4>
+                <ul>
+                    <li class="li-hab">Kafka</li>
+                    <li class="li-hab">RabbitMQ</li>
+                    <li class="li-hab">IBMMQ</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4 data-i18n="cv-skill-monitoring">Monitoramento</h4>
+                <ul>
+                    <li class="li-hab">Grafana</li>
+                    <li class="li-hab">Splunk</li>
+                    <li class="li-hab">Dynatrace</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4 data-i18n="cv-skill-sap">SAP</h4>
+                <ul>
+                    <li class="li-hab">SAP ABAP</li>
+                    <li class="li-hab">SAP Build</li>
+                    <li class="li-hab">SAP GenAI Hub</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4 data-i18n="cv-skill-data">Dados</h4>
+                <ul>
+                    <li class="li-hab">GraphQL</li>
+                    <li class="li-hab">Redis</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4 data-i18n="cv-skill-infra">Infraestrutura</h4>
+                <ul>
+                    <li class="li-hab">Docker</li>
+                    <li class="li-hab">Podman</li>
+                    <li class="li-hab">AWS EC2</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4 data-i18n="cv-skill-ai">Inteligência Artificial</h4>
+                <ul>
+                    <li class="li-hab">SDD/SDLC</li>
+                    <li class="li-hab">AI-Augmented Eng.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section class="forma">
-        <h3>Formação acadêmica</h3>
-        <p>Análise e Desenvolvimento de Sistemas - IFSul Gravataí (ainda cursando)</p>
-        <p>Ensino Médio - Escola Martinho Lutero</p>
-    </section> 
+        <h3 data-i18n="cv-formacao-title">Formação acadêmica</h3>
+        <p data-i18n="cv-formacao-1">Análise e Desenvolvimento de Sistemas — IFSul Gravataí (2021–2024)</p>
+        <p data-i18n="cv-formacao-2">Pós-graduação em IA e Ciência de Dados — Unirritter (2025)</p>
+    </section>
+    <script src="../../js/lang.js"></script>
 </body>
 </html>
